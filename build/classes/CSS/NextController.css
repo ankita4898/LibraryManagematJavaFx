@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 Jun, 2020, 3:13:33 PM
+    Author     : sony
+*/
+.operation{
+        -fx-background-color:#e6f5ff;
+
+    
+}
+
+
+.issueBtn{
+    -fx-background-color: #a7ffeb;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+}
+
+.statsButton{
+    -fx-background-color: #a7ffeb;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+
+    
+}
+.welcome{
+    -fx-background-color: #a7ffeb;
+}
+
+.backWelcome:hover{
+     
+    -fx-background-color: #e6f5ff;
+    
+}

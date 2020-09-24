@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="operation" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #e6f5ff;" stylesheets="@../CSS/NextController.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Library.NextController">
+   <children>
+      <AnchorPane fx:id="profile" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <JFXButton fx:id="issueBtn" buttonType="RAISED" contentDisplay="BOTTOM" layoutX="63.0" layoutY="178.0" onAction="#bookIssue" prefHeight="182.0" prefWidth="180.0" style="-fx-background-radius: 30; -fx-background-color: #a7ffeb;" stylesheets="@../CSS/NextController.css" text="Issue Books" textFill="#3f51b5">
+               <graphic>
+                  <ImageView fx:id="img1" fitHeight="128.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gallery/book.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Bookman Old Style Italic" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="statsBtn" buttonType="RAISED" contentDisplay="BOTTOM" layoutX="550.0" layoutY="178.0" onAction="#statistics" prefHeight="182.0" prefWidth="177.0" style="-fx-background-radius: 30; -fx-background-color: #a7ffeb; -fx-background-insets: 0;" stylesheets="@../CSS/NextController.css" text="Statistics" textFill="#3f51b5">
+               <graphic>
+                  <ImageView fx:id="img2" fitHeight="126.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gallery/stats.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Bookman Old Style Italic" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="welcome" alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="13.0" prefHeight="70.0" prefWidth="750.0" style="-fx-background-color: #a7ffeb; -fx-background-radius: 50; -fx-background-insets: 0;" text=" Welcome               !! " textFill="#3f51b5">
+               <font>
+                  <Font name="Bookman Old Style" size="36.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="backWelcome" buttonType="RAISED" layoutX="550.0" layoutY="489.0" onAction="#backWelcome" prefHeight="50.0" prefWidth="150.0" text="Back" textFill="#3e52b2" underline="true">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="welcome" alignment="CENTER" layoutX="363.0" layoutY="32.0" prefHeight="32.0" prefWidth="165.0" textAlignment="CENTER" textFill="#3e52b2">
+               <font>
+                  <Font name="Bookman Old Style" size="24.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="returnBtn" buttonType="RAISED" contentDisplay="BOTTOM" layoutX="310.0" layoutY="178.0" onAction="#bookReturn" prefHeight="182.0" prefWidth="180.0" style="-fx-background-radius: 30; -fx-background-color: #a7ffeb;" stylesheets="@../CSS/NextController.css" text="Return Books" textFill="#3f51b5">
+               <graphic>
+                  <ImageView fx:id="img11" fitHeight="128.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gallery/book.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Bookman Old Style Italic" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

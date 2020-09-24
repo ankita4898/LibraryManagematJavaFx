@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="650.0" stylesheets="@../CSS/IssuedBooks.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Library.IssuedBooksController">
+   <children>
+      <TableView fx:id="issuedBooks" layoutX="38.0" layoutY="70.0" prefHeight="530.0" prefWidth="650.0" stylesheets="@../CSS/IssuedBooks.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+        <columns>
+          <TableColumn fx:id="b_id" prefWidth="111.0" style="-fx-alignment: CENTER; -fx-font-size: 18;" text="Book ID" />
+          <TableColumn fx:id="b_name" prefWidth="168.0" style="-fx-alignment: CENTER; -fx-font-size: 18;" text="Book Name" />
+            <TableColumn fx:id="b_publisher" minWidth="0.0" prefWidth="212.0" style="-fx-alignment: CENTER; -fx-font-size: 18;" text="Publisher" />
+            <TableColumn fx:id="action" prefWidth="148.0" style="-fx-alignment: CENTER; -fx-font-size: 18;" text="Action" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" prefHeight="70.0" prefWidth="650.0" style="-fx-background-color: #a7ffeb; -fx-background-radius: 40;" text="Books" textAlignment="CENTER" textFill="#3e53b0">
+         <font>
+            <Font name="Bookman Old Style" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="bookBack" layoutX="14.0" layoutY="10.0" onAction="#bookBack" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #a7ffeb;" text="Back" textFill="#3f51b5">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView fill="#3e53b0" glyphName="BOOK" layoutX="245.0" layoutY="44.0" size="27.0" textAlignment="CENTER" wrappingWidth="34.0" />
+      <FontAwesomeIconView glyphName="LEFT ARROW" layoutX="37.0" layoutY="39.0" />
+   </children>
+</AnchorPane>

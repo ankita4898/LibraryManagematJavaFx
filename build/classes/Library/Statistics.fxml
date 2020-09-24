@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="statsPane" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Library.StatisticsController">
+   <children>
+      <TableView fx:id="statsTable" layoutX="14.0" layoutY="62.0" prefHeight="338.0" prefWidth="600.0" style="-fx-background-color: #e6f5ff;" stylesheets="@../CSS/Statistics.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="62.0">
+        <columns>
+          <TableColumn fx:id="ib_id" prefWidth="89.0" style="-fx-font-size: 18; -fx-font-color: #3e52b2;" text="Book Id" />
+          <TableColumn fx:id="ib_name" prefWidth="201.0" style="-fx-font-size: 18;" text="Book Name" />
+            <TableColumn fx:id="ib_publisher" prefWidth="175.0" style="-fx-font-size: 18;" text="Publisher" />
+            <TableColumn fx:id="renew" prefWidth="113.0" style="-fx-font-size: 18;" text="Renew" />
+            <TableColumn fx:id="due_date" prefWidth="121.0" style="-fx-font-size: 18;" text="Due Date" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutY="5.0" prefHeight="52.0" prefWidth="700.0" style="-fx-background-color: #a7ffeb; -fx-background-radius: 30;" text="Statistics" textFill="#3e52b2">
+         <font>
+            <Font name="Bookman Old Style" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="statsBack" buttonType="RAISED" layoutX="490.0" layoutY="500.0" onAction="#statsBack" prefHeight="46.0" prefWidth="131.0" style="-fx-background-color: #a7ffeb;" text="Back" textFill="#3e53b0" underline="true">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView fill="#3e53b0" glyphName="SIGNAL" layoutX="213.0" layoutY="39.0" size="23" />
+   </children>
+</AnchorPane>
